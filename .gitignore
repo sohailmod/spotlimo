@@ -1,6 +1,9 @@
 /node_modules
 /vendor
 /public_html/vendor
+/public_html/node_modules
+/public_html/public/vendor
+/public_html/public/hot
 /vendor.3161
 /DO_NOT_UPLOAD_HERE
 /.env
