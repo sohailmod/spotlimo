@@ -1,5 +1,8 @@
 /node_modules
 /vendor
+/public_html/vendor
+/vendor.3161
+/DO_NOT_UPLOAD_HERE
 /.env
 /.env.*.php
 /storage/*
