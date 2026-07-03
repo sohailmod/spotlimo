@@ -219,9 +219,8 @@
 
             {{-- Circle SLider --}}
             <div class="col-lg-12">
-                {{-- <input type="time"> --}}
                 <div class="circle-vehicle-slider">
-
+                <div class="circle-vehicle-slider">
                     <div class="holderCircle">
 
                         @auth
@@ -287,7 +286,6 @@
 
                     </div>
                 </div>
-
             </div>
             {{-- Circle SLider --}}
 

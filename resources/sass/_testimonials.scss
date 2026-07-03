@@ -1,0 +1,147 @@
+.testimonials-secton{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .testimonials-block{
+        position: relative;
+        margin: 24px;
+        .bg-shape{
+            position: absolute;
+            top: -24px;
+            left: -24px;
+            background-color: $accent-dark;
+            z-index: -10;
+            height: calc(100% + 48px);
+            width: calc(100% + 48px);
+        }
+        &:before{
+            content: '';
+            height: calc(100% + 48px);
+            width: 50%;
+            position: absolute;
+            background-color: $light;
+            top: -24px;
+            z-index: -5;
+            left: 50%;
+            transform: translateX(-50%) skewX(25deg);
+            @include media-breakpoint-down(lg){
+                width: 25%;
+
+            }
+
+        }
+     
+      
+        .testimonials-container{
+            padding: 32px 16px ;
+            position: relative;
+            box-shadow: 0 0 24px 0 rgba($black, 0.5);
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: rgba($black, 1);
+                background: linear-gradient(302deg, rgba($black, 0.75) 0%, rgba($accent-dark,0.75) 100%);
+            }
+            .testimonial-content{
+                position: relative;
+                z-index: 5;
+                .testimonial-card-title{
+                    margin-bottom: 8px;
+                    .small-title,
+                    .title{
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+                    .small-title{
+                        color: $white;
+                        opacity: 0.75;
+                        font-family:  $latoFont; 
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: 8px;
+                    }
+                    .title{
+                        position: relative;
+                        padding-bottom: 10px;
+                        font-weight: 700;
+                        color: $primary;
+                        font-family:   $PlayfairFont;
+                        &::after{
+                            position: absolute;
+                            bottom: 0;
+                            width: 120px;
+                            height: 3px;
+                            content: '';
+                            background-color: $white;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+                .testimonial-slider{
+                    .testimonial-item{
+                       .testimonial-content{
+                        color: $white;
+                        text-align: center;
+                            .quote-mark{
+                                margin-bottom: 16px;
+                                img{
+                                    margin: 0 auto;
+                                    width: 24px;
+                                }
+                            }
+                            .text-block{
+                                font-style: italic;
+                                margin: 0 auto;
+                                @include media-breakpoint-up(md){
+                                    width: 50%;
+
+                                }
+                            }
+                            .client-details{
+                                .avatar{
+                                    img{
+                                        margin: 0 auto;
+                                        width: 50px;
+                                    }
+                                }
+                                .name-date-wrp{
+                                    p{
+                                        margin-bottom: 0;
+                                        font-size: 17px;
+                                        &:last-child{
+                                            margin-top: 0px;
+                                            font-size: 12px;
+
+                                        }
+                                    }
+                                }
+                            }
+                       } 
+                    }
+                    .owl-dots{
+                        display: flex;
+                        justify-content: center;
+                        button{
+                            border: 1px solid $primary;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 7px;
+                            &:not(:last-child){
+                                margin-right: 8px;
+                            }
+                            &.active{
+                                background-color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

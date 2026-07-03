@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spot Limo - Luxury Limo & Black Car Service Chicago Suburbs IL</title>
+  <meta name="description" content="Spot Limo offers premium black car and limousine service across 20 Chicago suburbs. 24/7 airport transfers, weddings and corporate travel.">
+  <link rel="icon" type="image/png" href="/build/assets/favicon-bd7c7c7a.png">
+  <link rel="stylesheet" href="/build/assets/app-47cd774a.css">
+  <link rel="stylesheet" href="/build/assets/circle-3db0f5ee.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .main-navbar {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .main-navbar .nav-link { color: #1a1a1a !important; }
+    .main-navbar .nav-link:hover { color: #000 !important; }
+    .main-navbar .dropdown-wrp > .nav-link,
+    .main-navbar .dropdown-wrp > .down-arrow i {
+      color: #1a1a1a !important;
+      font-weight: 600;
+    }
+    .main-navbar .dropdown-menu-wrp .nav-link { color: #111 !important; }
+    .main-navbar .dropdown-menu-wrp .nav-link:hover { color: #0a1228 !important; }
+    @media (min-width: 768px) {
+      .main-navbar .navigation,
+      .main-navbar .navigation .links,
+      .main-navbar .navigation .nav-items {
+        display: flex !important;
+        align-items: center;
+      }
+      .main-navbar .navigation .nav-items {
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .main-navbar .dropdown-wrp {
+        position: relative;
+        padding-bottom: 8px;
+      }
+      .main-navbar .dropdown-menu-wrp {
+        display: none;
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+        min-width: 260px;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+      }
+      .main-navbar .dropdown-wrp.is-open > .dropdown-menu-wrp,
+      .main-navbar .dropdown-wrp:focus-within > .dropdown-menu-wrp,
+      .main-navbar .dropdown-wrp:hover > .dropdown-menu-wrp {
+        display: block;
+      }
+      .main-navbar .sub-dropdown-wrp {
+        position: relative;
+      }
+      .main-navbar .sub-dropdown-wrp > .sub-dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 230px;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+      }
+      .main-navbar .sub-dropdown-wrp:focus-within > .sub-dropdown-menu,
+      .main-navbar .sub-dropdown-wrp:hover > .sub-dropdown-menu {
+        display: block;
+      }
+      .main-navbar .login-register .wrapper { color: #1a1a1a !important; }
+      .main-navbar .login-register .wrapper span:last-child {
+        line-height: 1.15;
+      }
+      .main-navbar .login-register .wrapper .phone-number {
+        font-weight: 700;
+      }
+    }
+    .booking-block-mainwrp {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+      margin-top: -34px;
+      padding: 22px;
+      position: relative;
+      z-index: 30;
+    }
+    .booking-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .booking-grid .card {
+      border: 1px solid #e7ebf1;
+      border-radius: 10px;
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .booking-grid .card input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .booking-grid .card.active {
+      border-color: #0a1228;
+      box-shadow: 0 0 0 2px rgba(10, 18, 40, 0.08);
+    }
+    .booking-grid .card img {
+      width: auto;
+      height: 58px;
+      object-fit: contain;
+      margin-bottom: 6px;
+    }
+    .booking-form-mock input,
+    .booking-form-mock select {
+      width: 100%;
+      border: 1px solid #dbe1ea;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f8faff;
+      margin-bottom: 10px;
+    }
+    .booking-form-mock button {
+      width: 100%;
+      border: 0;
+      border-radius: 8px;
+      padding: 11px;
+      background: #0a1228;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .contact-us-form-wrp form input,
+    .contact-us-form-wrp form textarea {
+      background: #fff;
+    }
+    .icons-social a { color: #111; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar main-navbar">
+    <div class="container-wrp container-lg">
+      <div class="d-flex w-100 justify-content-between">
+        <div class="col-lg-auto col-md-2 logo-wrapper">
+          <div class="logo">
+            <a href="/" class="d-block">
+              <div class="desktop-logo app-logo">
+                <img src="/build/assets/desktop-logo-full-d2834d6d.png" alt="Spot Limo" class="img-fluid">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-8 navigation-wrapper">
+          <div class="navigation">
+            <span class="d-md-none d-block testi"></span>
+            <div class="links">
+              <div class="nav-items">
+                <div class="nav-item"><a class="nav-link" href="/">Home</a></div>
+
+                <div class="nav-item dropdown-wrp">
+                  <a class="nav-link" href="javascript:void(0)">Services</a>
+                  <span class="down-arrow d-md-none d-flex"><i class="bi bi-caret-down-fill"></i></span>
+                  <div class="dropdown-menu-wrp sub-dropdown">
+                    <div class="nav-item sub-dropdown-wrp">
+                      <a class="nav-link" href="/airport-services">Airport Transportation</a>
+                      <span><i class="bi bi-caret-down-fill"></i></span>
+                      <div class="nav-item sub-dropdown-menu">
+                        <div class="nav-item"><a class="nav-link" href="/ohare-airport">O'Hare Airport</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/midway-signature">Midway Signature Airport</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/milwaukee-airport">Milwaukee International Airport</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/dupage-airport">Dupage Airport</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/chicago-airport">Chicago Executive Airport</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/gary-international">Gary International Airport</a></div>
+                      </div>
+                    </div>
+
+                    <div class="nav-item sub-dropdown-wrp">
+                      <a class="nav-link" href="/chauffeur-services">Reasonable Chauffeur Services</a>
+                      <span><i class="bi bi-caret-down-fill"></i></span>
+                      <div class="nav-item sub-dropdown-menu">
+                        <div class="nav-item"><a class="nav-link" href="/chauffeur-services-chicago">Chauffeur Services</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/multilingual-chauffeurs-services">Multilingual Chauffeurs Services</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/chauffeur-services-major">Chauffeur Services Major</a></div>
+                      </div>
+                    </div>
+
+                    <div class="nav-item sub-dropdown-wrp">
+                      <a class="nav-link" href="/executive-transport">Hourly Executive Transportation</a>
+                      <span><i class="bi bi-caret-down-fill"></i></span>
+                      <div class="nav-item sub-dropdown-menu">
+                        <div class="nav-item"><a class="nav-link" href="/business-trip">Business Trip</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/family-get-together">Family Get Together</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/sports-event">Sports Events</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/concerts">Concerts And Party</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/conventions">Conventions</a></div>
+                      </div>
+                    </div>
+
+                    <div class="nav-item sub-dropdown-wrp">
+                      <a class="nav-link" href="/wedding-transport">Special Occasions Services</a>
+                      <span><i class="bi bi-caret-down-fill"></i></span>
+                      <div class="nav-item sub-dropdown-menu">
+                        <div class="nav-item"><a class="nav-link" href="/wedding-services">Wedding Day</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/prom-nights">Prom Nights</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/holiday-parties">Holiday Parties</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/independence-day">Independence Day Celebration</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/newyear-nights">New Year's Night Out</a></div>
+                      </div>
+                    </div>
+
+                    <div class="nav-item sub-dropdown-wrp">
+                      <a class="nav-link" href="/interstate-transport">Interstate Services</a>
+                      <span><i class="bi bi-caret-down-fill"></i></span>
+                      <div class="nav-item sub-dropdown-menu">
+                        <div class="nav-item"><a class="nav-link" href="/corporate-travel">Corporate Travel Service</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/luxury-car">Luxury Car Charter</a></div>
+                        <div class="nav-item"><a class="nav-link" href="/local-attraction">Local Attractions</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nav-item"><a class="nav-link" href="/vehicles">Fleet</a></div>
+                <div class="nav-item"><a class="nav-link" href="/about-us">About</a></div>
+                <div class="nav-item"><a class="nav-link" href="/our-blogs">Blogs</a></div>
+                <div class="nav-item"><a class="nav-link" href="/faq">FAQ</a></div>
+                <div class="nav-item"><a class="nav-link" href="/contactus">Contact Us</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-auto col-md-2 login-register">
+          <div>
+            <a href="tel:+16302901761" class="wrapper d-flex align-items-center">
+              <span class="d-sm-block d-none"><i class="bi bi-telephone-fill"></i></span>
+              <span class="d-flex flex-column mb-1"><span>Call Us</span><span class="phone-number">630-290-1761</span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hamburger-wrp d-flex d-md-none">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button type="button" class="btn backtotop" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+  <div class="w-100 hero-section-wrp">
+    <div class="hero-content-wrp">
+      <div class="img-wrp">
+        <div class="img-hero" style="background-image: url('/resources/images/banners/hero-img.png')">
+          <div class="hero-text-content-wrp">
+            <div class="container-lg">
+              <div class="col-xxl-7 col-xl-9 col-lg-10 col-md-8 col-12">
+                <div class="hero-title-wrp mt-5">
+                  <h1>Luxurious Limousine and Black Car Service Everyone Can Afford</h1>
+                </div>
+                <div class="hero-btns-wrp">
+                  <span class="guide-text">Spot Limo brings Black Sedans, Stretch limousines, Luxurious SUVs, and party bus rentals for every special occasion. You can experience the exquisite drive for all occasions and events at the most affordable hourly rates.</span>
+                  <div class="btns-wrp d-flex align-items-center flex-sm-row flex-column">
+                    <div class="bookNow-btn-wrp">
+                      <a href="#bookingBlock" class="btn btn-default btn-book-now btn-wide icon-btn">Book Now <i class="bi bi-arrow-right-circle-fill"></i></a>
+                    </div>
+                    <span>Or</span>
+                    <div class="text-call-btn-wrp">
+                      <a href="tel:+16302901761" class="btn btn-outlined btn-darkbg btn-text-call">Text/Call : 630-290-1761</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="overlay"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md booking-block-mainwrp" id="bookingBlock">
+    <form class="row booking-form-mock" method="POST" action="https://formspree.io/f/your-form-id">
+      <input type="hidden" name="_subject" value="New Spot Limo booking enquiry">
+      <div class="col-12">
+        <div class="booking-grid">
+          <label class="card active" for="vehicleSedan">
+            <input id="vehicleSedan" type="radio" name="vehicle" value="Sedan" checked>
+            <img src="/vehicle-type/1mU5X3sLC1g58rAZNqAPa0OkgpQ7EWakxX2gIW9O.jpg" alt="Sedan">
+            <p class="mb-0">Sedan</p>
+          </label>
+          <label class="card" for="vehicleSuv">
+            <input id="vehicleSuv" type="radio" name="vehicle" value="SUV">
+            <img src="/vehicle-type/3dNSVR9xcrjEIU3DWKGlBAMQC7fi4wK7esr49WTy.jpg" alt="SUV">
+            <p class="mb-0">SUV</p>
+          </label>
+          <label class="card" for="vehicleStretch">
+            <input id="vehicleStretch" type="radio" name="vehicle" value="Stretch Limo">
+            <img src="/vehicle-type/6fjujA8RGuRCGYXC3VpeurdEE9oNhUtETWCAYlGo.png" alt="Stretch Limo">
+            <p class="mb-0">Stretch Limo</p>
+          </label>
+          <label class="card" for="vehicleVan">
+            <input id="vehicleVan" type="radio" name="vehicle" value="Executive Van">
+            <img src="/vehicle-type/81t2l0iEsDQgmwQSidMbHH1SN1Cfv0YbceDvDHYY.webp" alt="Executive Van">
+            <p class="mb-0">Executive Van</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6"><input type="text" name="pickup" placeholder="From" required></div>
+      <div class="col-md-6"><input type="text" name="dropoff" placeholder="To" required></div>
+      <div class="col-md-4">
+        <select name="serviceType" required>
+          <option value="" selected disabled>Service Type</option>
+          <option value="To Airport">To Airport</option>
+          <option value="From Airport">From Airport</option>
+          <option value="Hourly">Hourly</option>
+        </select>
+      </div>
+      <div class="col-md-4"><input type="date" name="serviceDate" required></div>
+      <div class="col-md-4"><input type="time" name="serviceTime" required></div>
+      <div class="col-md-6"><input type="text" name="fullName" placeholder="Your Name" required></div>
+      <div class="col-md-6"><input type="email" name="email" placeholder="Your Email" required></div>
+      <div class="col-md-12"><input type="tel" name="phone" placeholder="Your Phone Number" required></div>
+      <div class="col-12"><button type="submit">Send Booking Enquiry</button></div>
+    </form>
+  </div>
+
+  <div class="w-100 our-services-section">
+    <div class="services-content">
+      <div class="services-title">
+        <h1 class="title">Our Services</h1>
+        <span class="overlay-title">Affordable Transportation Services We Offer</span>
+      </div>
+      <div class="services-cards">
+        <div class="row mx-0 px-0">
+          <div class="col-lg-4 col-md-6 col-sm-6 service-card card-airport-tra px-0">
+            <a href="/airport-services" class="d-block">
+              <div class="img-wrp"><img src="/resources/images/services/airport-tra.png" alt="" class="img-fluid"></div>
+              <div class="text-wrp"><div class="title-wrp"><h4 class="title"><span>Airport Transportation</span></h4></div><div class="sub-text-wrp"><p class="mb-0">We provide luxurious to and from transportation services from all major airports within Illinois and its suburbs. Our vehicles include Stretch Limo, a Town Car, and a luxury SUV.</p></div></div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 service-card card-chauffeur-tra px-0">
+            <a href="/chauffeur-services" class="d-block">
+              <div class="img-wrp"><img src="/resources/images/services/chauffeur-tra.png" alt="" class="img-fluid"></div>
+              <div class="text-wrp"><div class="title-wrp"><h4 class="title"><span>Reasonable Chauffeur Services</span></h4></div><div class="sub-text-wrp"><p class="mb-0">We have chauffeurs with a clean driving record as we aim to provide 24/7 chauffeur limousine car service all over Illinois without any inconvenience.</p></div></div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 service-card card-executive-tra px-0">
+            <a href="/executive-transport" class="d-block">
+              <div class="img-wrp"><img src="/resources/images/services/executive-tra.png" alt="" class="img-fluid"></div>
+              <div class="text-wrp"><div class="title-wrp"><h4 class="title"><span>Hourly Executive Transportation</span></h4></div><div class="sub-text-wrp"><p class="mb-0">You can trust our inexpensive hourly executive transportation services for your business and family trips.</p></div></div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 service-card card-wedding-tra px-0">
+            <a href="/wedding-transport" class="d-block">
+              <div class="img-wrp"><img src="/resources/images/services/wedding-tra.png" alt="" class="img-fluid"></div>
+              <div class="text-wrp"><div class="title-wrp"><h4 class="title"><span>Wedding Limo Services</span></h4></div><div class="sub-text-wrp"><p class="mb-0">We offer wedding limo services with personalized and luxurious features. Whether you want a venue appearance in an elegant limousine or need ground transportation services to pick up and drop off guests, we got you covered.</p></div></div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 service-card card-interstate-tra px-0">
+            <a href="/interstate-transport" class="d-block">
+              <div class="img-wrp"><img src="/resources/images/services/interstate-tra.png" alt="" class="img-fluid"></div>
+              <div class="text-wrp"><div class="title-wrp"><h4 class="title"><span>Interstate Service</span></h4></div><div class="sub-text-wrp"><p class="mb-0">We can serve you all over the Illinois area. You can count on us for all your ground transportation requirement. You can book a ride by visiting our website at any time or calling us.</p></div></div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 service-card card-corporate-tra px-0">
+            <a href="/corporate-transport" class="d-block">
+              <div class="img-wrp"><img src="/resources/images/services/corporate-tra.png" alt="" class="img-fluid"></div>
+              <div class="text-wrp"><div class="title-wrp"><h4 class="title"><span>Corporate Limo Transportation</span></h4></div><div class="sub-text-wrp"><p class="mb-0">If your company’s guests or employees travel more often, our executive transportation is perfect for them. Our long-term reliable relationship with serving businesses makes us stand out.</p></div></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md home-contact-us-section contact-us-section pt-5 pb-5">
+    <div class="contactus-content-wrp">
+      <div class="img-wrp d-lg-block d-none">
+        <img src="/build/assets/contact-us-banner-b3886574.png" alt="" class="img-fluid mx-auto d-block">
+      </div>
+      <div class="contact-us-form-wrp px-sm-5 px-3 py-4">
+        <div class="sub-heading"><h4 class="title mb-0">Contact Spot Limo Now &amp; Make Your Drive Easy,</h4></div>
+        <div class="form-wrp">
+          <div class="title-wrp"><h1 class="title">Contact Us</h1></div>
+          <div class="intro pt-3"><p class="mb-0 pb-3" style="border-bottom:1px solid black; font-size:16px; font-style:italic;">Our professional drivers and chauffeurs offer prompt pick-and-drop services. Besides, our response time and impressive reputation make us the best and most reliable limo rental and car service provider in Illinois.<br><b>So, contact us now if you want to spend less and hire the best.</b></p></div>
+          <form>
+            <div class="row mx-0 mt-4">
+              <div class="px-0 col-lg-6">
+                <div class="mb-3"><input type="text" class="form-control" placeholder="Enter Your Name"></div>
+                <div class="mb-3"><input type="email" class="form-control" placeholder="Enter Your Email Address"></div>
+                <div class="mb-0"><input type="text" class="form-control" placeholder="Enter Your Contact Number"></div>
+                <span><i> contact should not be less than 10 digits i.e. <strong>2241111111</strong></i></span>
+              </div>
+              <div class="pe-lg-0 ps-lg-3 px-0 col-lg-6 mt-lg-0 mt-3">
+                <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Write here..."></textarea></div>
+              </div>
+              <div class="px-0 col-lg-12 mt-3"><button type="button" class="btn btn-default rounded-sm btn-send-message">Submit Your Request</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md testimonials-secton">
+    <div class="testimonials-block mt-0">
+      <div class="bg-shape"></div>
+      <div class="testimonials-container" style="background-image: url('/build/assets/testimonials-bgImg-66dc9f37.png')">
+        <div class="testimonial-content">
+          <div class="testimonial-card-title">
+            <h5 class="small-title">TESTIMONIALS</h5>
+            <h2 class="title">What Our Clients Say</h2>
+          </div>
+          <div class="testimonial-slider owl-carousel">
+            <div class="testimonial-item"><div class="testimonial-content mt-4 mb-3"><div class="mx-auto quote-mark"><img src="/build/assets/straight-quotes-30c188a6.png" alt="" class="img-fluid"></div><div class="text-block"><p class="mb-o">SpotLimo's black car service in Chicago is the epitome of class and style. The chauffeur was friendly and the vehicle was a pristine luxury SUV. I will definitely be using SpotLimo for all my future transportation needs.</p></div><div class="client-details mx-auto mt-3 mb-3"><div class="name-date-wrp"><p>Lopez Holland</p><p>7/12/2023</p></div></div></div></div>
+            <div class="testimonial-item"><div class="testimonial-content mt-4 mb-3"><div class="mx-auto quote-mark"><img src="/build/assets/straight-quotes-30c188a6.png" alt="" class="img-fluid"></div><div class="text-block"><p class="mb-o">SpotLimo offers an outstanding black car service in Chicago. The chauffeur was professional, the vehicle was elegant, and the overall experience was fantastic. I highly recommend SpotLimo for all your transportation needs.</p></div><div class="client-details mx-auto mt-3 mb-3"><div class="name-date-wrp"><p>Erica Ardith</p><p>7/10/2023</p></div></div></div></div>
+            <div class="testimonial-item"><div class="testimonial-content mt-4 mb-3"><div class="mx-auto quote-mark"><img src="/build/assets/straight-quotes-30c188a6.png" alt="" class="img-fluid"></div><div class="text-block"><p class="mb-o">Amazing drivers! Always on time and are very professional. I will go through this company every time I need an SUV or Limo service.</p></div><div class="client-details mx-auto mt-3 mb-3"><div class="name-date-wrp"><p>Stefan Johnson</p><p>6/18/2023</p></div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="pt-4 pb-0" style="background-color: rgb(222, 222, 222)">
+    <div class="container main-foonter-content">
+      <div class="row">
+        <div class="col-12 logo-wrapper"><a href="/"><img src="/build/assets/desktop-logo-0f8948aa.png" alt="" class="img-fluid"></a></div>
+        <div class="col-md-5 col-12 intro-text-wrp">
+          <div class="text-content"><p class="mb-0">Spot Limo introduces the top-rated limousine and car service in Illinois and its suburban areas. We make your transportation secure with professional and licensed drivers. Whether you are traveling to a nearby state, an airport, or a wedding hall, we try to make your drive memorable with reasonable rates. With an extensive network of affiliates and prompt response time, we prioritize customer satisfaction over anything else.</p></div>
+          <div class="icons-social">
+            <div class="title-wrp"><h4>Social Links</h4></div>
+            <div class="icons-wrp"><ul class="d-flex"><li class="me-3"><a target="_blank" href="#"><i class="bi bi-facebook"></i></a></li><li class="me-3"><a target="_blank" href="#"><i class="bi bi-linkedin"></i></a></li><li class="me-3"><a target="_blank" href="#"><i class="bi bi-twitter"></i></a></li><li class="me-3"><a target="_blank" href="#"><i class="bi bi-youtube"></i></a></li><li><a target="_blank" href="#"><i class="bi bi-instagram"></i></a></li></ul></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-4 quicklinks-wrp"><div><div class="title-wrp"><h4>Quick Links</h4></div><div class="col"><ul><li><a href="/">Home</a></li><li><a href="/about-us">About Us</a></li><li><a href="/airport-services">Our Services</a></li><li><a href="/vehicles">Our Vehicles</a></li><li><a href="#">Testimonials</a></li><li><a href="/contactus">Contact Us</a></li></ul></div></div></div>
+        <div class="col-md-4 col-sm-7 offset-md-0 col-8 offset-sm-1 contact-us-wrp"><div><div class="title-wrp"><h4>Contact Us</h4></div><div class="col"><ul><li class="links-wrp"><div class="d-flex"><span class="d-block me-2"><i class="bi bi-geo-alt-fill"></i></span><div>1 Mid America Plaza, Oakbrook Terrace, IL 60181</div></div></li><li class="links-wrp"><a href="tel:+16302901761" class="d-flex"><span class="d-block me-2"><i class="bi bi-telephone-fill"></i></span><div>630-290-1761</div></a></li><li class="links-wrp"><a href="mailto:info@spotlimo.com" class="d-flex"><span class="d-block me-2"><i class="bi bi-envelope-fill"></i></span><div>info@spotlimo.com</div></a></li></ul></div></div></div>
+      </div>
+    </div>
+    <div class="bottomline py-3 px-0"><div class="container"><p class="mb-0 copyright-text"><a href="/">Spotlimo.com</a> All Rights Reserved. Copyright <span id="year"></span>.</p><p class="mb-0 developed-text">Developed By, <a href="https://mosora.ai/">mosora.ai</a></p></div></div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".hamburger-wrp").on("click", function() {
+        $(this).toggleClass('active');
+        $(".navigation").toggleClass('active');
+        $(".testi").toggleClass('active');
+        $("body").toggleClass('no-scroll');
+      });
+
+      $(".navigation .links .nav-items .dropdown-wrp .down-arrow").on("click", function() {
+        $(this).parents('.dropdown-wrp').toggleClass('active').siblings().removeClass('active');
+      });
+
+      $("#backToTop").on("click", function() {
+        $("body, html").scrollTop(0);
+      });
+
+      $(".navigation .dropdown-wrp > .nav-link, .navigation .dropdown-wrp > .down-arrow").on("click", function(event) {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          event.preventDefault();
+          const dropdown = $(this).closest('.dropdown-wrp');
+          dropdown.toggleClass('is-open').siblings().removeClass('is-open');
+        }
+      });
+
+      $(document).on("click", function(event) {
+        if (!$(event.target).closest('.dropdown-wrp').length) {
+          $(".dropdown-wrp").removeClass('is-open');
+        }
+      });
+
+      $(".booking-grid .card").on("click", function() {
+        const selected = $(this).find('input[type="radio"]');
+        selected.prop('checked', true);
+        $(".booking-grid .card").removeClass('active');
+        $(this).addClass('active');
+      });
+
+      $(".testimonial-slider").owlCarousel({
+        items: 1,
+        nav: false,
+        dots: true
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+<script src="/shared/shared-layout.js?v=3?v=3" defer></script>
+</body>
+</html>
