@@ -1,0 +1,9 @@
+# Publish the pre-built static site.
+# The repository root is a Laravel (PHP) application, but the deployable
+# site is the fully static export in `netlify-static/`. Without this,
+# Netlify publishes the repo root (which has no index.html) and every
+# path returns a 404.
+[build]
+  publish = "netlify-static"
+  # The site is pre-rendered; there is no build step to run.
+  command = ""
