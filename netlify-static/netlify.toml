@@ -1,0 +1,373 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contactus"
+  to = "/pages/contactus.html"
+  status = 200
+
+[[redirects]]
+  from = "/about-us"
+  to = "/pages/about-us.html"
+  status = 200
+
+[[redirects]]
+  from = "/faq"
+  to = "/pages/faq.html"
+  status = 200
+
+[[redirects]]
+  from = "/vehicles"
+  to = "/pages/vehicles.html"
+  status = 200
+
+[[redirects]]
+  from = "/our-fleet"
+  to = "/pages/our-fleet.html"
+  status = 200
+
+[[redirects]]
+  from = "/airport-services"
+  to = "/pages/airport-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/ohare-airport"
+  to = "/pages/ohare-airport.html"
+  status = 200
+
+[[redirects]]
+  from = "/midway-signature"
+  to = "/pages/midway-signature.html"
+  status = 200
+
+[[redirects]]
+  from = "/milwaukee-airport"
+  to = "/pages/milwaukee-airport.html"
+  status = 200
+
+[[redirects]]
+  from = "/dupage-airport"
+  to = "/pages/dupage-airport.html"
+  status = 200
+
+[[redirects]]
+  from = "/chicago-airport"
+  to = "/pages/chicago-airport.html"
+  status = 200
+
+[[redirects]]
+  from = "/gary-international"
+  to = "/pages/gary-international.html"
+  status = 200
+
+[[redirects]]
+  from = "/executive-transport"
+  to = "/pages/executive-transport.html"
+  status = 200
+
+[[redirects]]
+  from = "/chauffeur-services"
+  to = "/pages/chauffeur-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/chauffeur-services-corporate"
+  to = "/pages/chauffeur-services-corporate.html"
+  status = 200
+
+[[redirects]]
+  from = "/chauffeur-services-major"
+  to = "/pages/chauffeur-services-major.html"
+  status = 200
+
+[[redirects]]
+  from = "/chauffeur-services-chicago"
+  to = "/pages/chauffeur-services-chicago.html"
+  status = 200
+
+[[redirects]]
+  from = "/chauffeur-services-midway"
+  to = "/pages/chauffeur-services-midway.html"
+  status = 200
+
+[[redirects]]
+  from = "/chauffeur-services-ohare"
+  to = "/pages/chauffeur-services-ohare.html"
+  status = 200
+
+[[redirects]]
+  from = "/multilingual-chauffeurs-services"
+  to = "/pages/multilingual-chauffeurs-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/multilingual-chauffeur-services"
+  to = "/multilingual-chauffeur-services/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/multilingual-chauffeurs-services"
+  to = "/multilingual-chauffeurs-services/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/corporate-transport"
+  to = "/pages/corporate-transport.html"
+  status = 200
+
+[[redirects]]
+  from = "/corporate-travel"
+  to = "/pages/corporate-travel.html"
+  status = 200
+
+[[redirects]]
+  from = "/corporate-limo-contract"
+  to = "/pages/corporate-limo-contract.html"
+  status = 200
+
+[[redirects]]
+  from = "/meet-greet"
+  to = "/pages/meet-greet.html"
+  status = 200
+
+[[redirects]]
+  from = "/tracking-services"
+  to = "/pages/tracking-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/white-glove"
+  to = "/pages/white-glove.html"
+  status = 200
+
+[[redirects]]
+  from = "/wedding-transport"
+  to = "/pages/wedding-transport.html"
+  status = 200
+
+[[redirects]]
+  from = "/wedding-services"
+  to = "/pages/wedding-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/prom-nights"
+  to = "/pages/prom-nights.html"
+  status = 200
+
+[[redirects]]
+  from = "/holiday-parties"
+  to = "/pages/holiday-parties.html"
+  status = 200
+
+[[redirects]]
+  from = "/independence-day"
+  to = "/pages/independence-day.html"
+  status = 200
+
+[[redirects]]
+  from = "/newyear-nights"
+  to = "/pages/newyear-nights.html"
+  status = 200
+
+[[redirects]]
+  from = "/business-trip"
+  to = "/pages/business-trip.html"
+  status = 200
+
+[[redirects]]
+  from = "/family-get-together"
+  to = "/pages/family-get-together.html"
+  status = 200
+
+[[redirects]]
+  from = "/sports-event"
+  to = "/pages/sports-event.html"
+  status = 200
+
+[[redirects]]
+  from = "/concerts"
+  to = "/pages/concerts.html"
+  status = 200
+
+[[redirects]]
+  from = "/conventions"
+  to = "/pages/conventions.html"
+  status = 200
+
+[[redirects]]
+  from = "/interstate-transport"
+  to = "/pages/interstate-transport.html"
+  status = 200
+
+[[redirects]]
+  from = "/sight-seeing"
+  to = "/pages/sight-seeing.html"
+  status = 200
+
+[[redirects]]
+  from = "/luxury-car"
+  to = "/pages/luxury-car.html"
+  status = 200
+
+[[redirects]]
+  from = "/amenities"
+  to = "/pages/amenities.html"
+  status = 200
+
+[[redirects]]
+  from = "/local-attraction"
+  to = "/pages/local-attraction.html"
+  status = 200
+
+[[redirects]]
+  from = "/our-blogs"
+  to = "/pages/our-blogs.html"
+  status = 200
+
+[[redirects]]
+  from = "/show-blog"
+  to = "/show-blog/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/show-blog/*"
+  to = "/pages/show-blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-naperville-il"
+  to = "/pages/limo-service-naperville-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-oak-brook-il"
+  to = "/pages/limo-service-oak-brook-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-schaumburg-il"
+  to = "/pages/limo-service-schaumburg-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-hinsdale-il"
+  to = "/pages/limo-service-hinsdale-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-elmhurst-il"
+  to = "/pages/limo-service-elmhurst-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-downers-grove-il"
+  to = "/pages/limo-service-downers-grove-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-wheaton-il"
+  to = "/pages/limo-service-wheaton-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-lombard-il"
+  to = "/pages/limo-service-lombard-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-burr-ridge-il"
+  to = "/pages/limo-service-burr-ridge-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-barrington-il"
+  to = "/pages/limo-service-barrington-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-bolingbrook-il"
+  to = "/pages/limo-service-bolingbrook-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-aurora-il"
+  to = "/pages/limo-service-aurora-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-itasca-il"
+  to = "/pages/limo-service-itasca-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-roselle-il"
+  to = "/pages/limo-service-roselle-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-carol-stream-il"
+  to = "/pages/limo-service-carol-stream-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-glen-ellyn-il"
+  to = "/pages/limo-service-glen-ellyn-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-westmont-il"
+  to = "/pages/limo-service-westmont-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-clarendon-hills-il"
+  to = "/pages/limo-service-clarendon-hills-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-lisle-il"
+  to = "/pages/limo-service-lisle-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-willowbrook-il"
+  to = "/pages/limo-service-willowbrook-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-villa-park-il"
+  to = "/pages/limo-service-villa-park-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/limo-service-addison-il"
+  to = "/pages/limo-service-addison-il.html"
+  status = 200
+
+[[redirects]]
+  from = "/confirm-reservations"
+  to = "/pages/confirm-reservations.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment-confirm"
+  to = "/pages/payment-confirm.html"
+  status = 200
+
+[[redirects]]
+  from = "/complete-reservations"
+  to = "/pages/complete-reservations.html"
+  status = 200
+
+[[redirects]]
+  from = "/payment/cancel"
+  to = "/pages/payment-cancel.html"
+  status = 200
+

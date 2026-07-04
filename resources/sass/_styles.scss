@@ -1,0 +1,613 @@
+body{
+    font-weight: 400;
+    &.no-scroll{
+        overflow-y: hidden;
+    }
+}
+#app{
+    overflow-x: hidden;
+}
+.hero-section-wrp{
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+    .hero-content-wrp{
+        position: relative;
+        &.inner-page{
+            .hero-text-content-wrp{
+                .hero-title-wrp{
+                    h1{
+                        font-size: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        span{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .img-wrp{
+                .img-hero{
+                    height: 640px;
+                    background-position: center;
+                    background-size: cover;
+
+                }
+            }
+            &.vehicle-rates{
+                .img-wrp{
+                    .img-hero{
+                        height: 480px;
+    
+                    }
+                }
+            }
+
+        }
+        .img-wrp{
+            .img-hero{
+                position: relative;
+                height: 90vh;
+                z-index: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             
+                .hero-text-content-wrp{
+                    position: relative;
+                    z-index: 1;
+                    font-family:   $PlayfairFont;
+                
+                    @include media-breakpoint-down(md){
+                        width:90% ;
+                    }
+                    @include media-breakpoint-down(sm){
+                        width:100% ;
+                        top: -60px;
+                    }
+                  
+                    .hero-title-wrp{
+                        h1{
+                            font-size: 40px;
+                            margin-bottom: 0;
+                            color: $white;
+                            @include media-breakpoint-down(xl){
+                                font-size: 36px;
+                            }
+                            @include media-breakpoint-down(lg){
+                                font-size: 32px;
+                            }
+        
+                            @include media-breakpoint-down(sm){
+                                text-align: center;
+                                font-size: 20px;
+                            }
+        
+                        }
+                        padding-bottom: 8px;
+                        margin-bottom: 8px;
+                        display: inline-flex;
+                        position: relative;
+                        &:after{
+                            // position: absolute;
+                            // bottom: 0;
+                            // left: 0;
+                            // width: 75%;
+                            // height: 2px;
+                            // background-color: $primary;
+                            // content: "";
+                        }
+                        border-bottom: 2px solid $primary;
+                    }
+                    .hero-btns-wrp{
+                        @include media-breakpoint-down(sm){
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .guide-text{
+                            font-family:  $latoFont ;
+                            color: $white;
+                            font-size: 18px;
+                            margin-bottom: 8px;
+                            @include media-breakpoint-down(sm){
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                        }
+                        .btns-wrp{
+                            font-family:  $latoFont ;
+                            margin-top: 16px;
+                            margin-bottom: 16px;
+                            >span{
+                                padding: 8px 11px;
+                                border-radius: 50px;
+                                border: 1px solid $light;
+                                color: $light;
+                                margin:  0 16px;
+                                @include media-breakpoint-down(sm){
+                                    margin: 16px 0;
+                                    display: none;
+                                }
+                            }
+                            .text-call-btn-wrp{
+                                a.btn-text-call{
+                                    padding: 10px 40px;
+                                    font-size: 17px;
+                                }
+                            }
+                            .bookNow-btn-wrp{
+                                @include media-breakpoint-down(sm){
+                                    width: 100%;
+                                    margin-bottom: 8px;
+                                    a{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($black, 0.75);
+                }
+            }
+        }
+    }
+}
+.attached-blocks{
+    .services-why-spotlimo{
+        padding-bottom: 120px;
+        &.book-limo{
+            padding-bottom: 0;
+            &.no-img{
+                color: $black;
+                > div{
+                    background-color: $accent-dark;
+                    margin-top: -90px;
+                    margin-bottom: -70px;
+                    padding: 40px 20px;
+                    border-radius: 24px;
+                    box-shadow: 0 0 24px 0 rgba($black, 0.5);
+                }
+                &:after{
+                    display: none;
+                }
+            }
+
+        }
+    }
+    .to-and-from-services{
+        padding-top: 120px;
+    }
+}
+.services-why-spotlimo,
+.spot-limo-intro-block,
+.personalised-limo-block,
+.ideal-travel-partner-block,
+.spot-limo-pricing-blocks,
+.spot-limo-pricing-accordion{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.services-why-spotlimo{
+    position: relative;
+    background-position: bottom;
+   
+    &.book-limo{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        &:after{
+            background: rgba($black, 1);
+            background: linear-gradient(130deg, rgba($black  , 0.9) 50%, rgba($black , 0.5) 55%);
+        }
+
+    }
+    &:after{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba($black, 1);
+        background: linear-gradient(0deg, rgba($black  , 0.9) 0%, rgba($black , 0.75) 100%);
+        // opacity: 0.5;
+        z-index: 4;
+        content: '';
+        position: absolute;
+    }
+    > .container-md{
+        position: relative;
+        z-index: 5;
+        .content-block{
+            .title-wrp{
+
+                .title{
+                    color: $white;
+                }
+            }
+            .content-wrp{
+                .text-wrp{
+                    .text-content{
+                        p{
+                            color: $white;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ideal-travel-partner-block{
+    padding-bottom: 60px;
+    background-color: rgba($grey-light, 0.25);
+    margin: 40px 0 0;
+    .content-block{
+    
+        .img-wrp{
+            .img-intro{
+                
+                &:after{
+                    
+                    z-index: 2;
+                }
+                img{
+                    position: relative;
+                    z-index: 3;
+                }
+            }
+        }
+    }
+    &.amenities-accordion-block{
+        .accordion{
+            box-shadow: 0 0 16px 0 rgba($black, 0.25);
+        
+        }
+        .accordion-button{
+            box-shadow: unset;
+            font-weight: 600;
+            color: $accent-dark;
+            &::after{
+                color: $accent-dark;
+
+            }
+            &:not(.collapsed){
+                background-color: rgba($accent, 0.25);
+
+            }
+        }
+        .accordion-collapse{
+            border-left: 2px solid rgba($accent, 0);
+            transition: 0.2s ease-in-out;
+            &.collapse{
+                &.show{
+                    transition: 0.2s ease-in-out;
+                    border-left: 2px solid rgba($accent, 1  );
+                }
+            }
+        }
+    }
+}
+.content-block{
+    .img-wrp{
+        .img-intro{
+            position: relative;
+            &.swap-img{
+                &:after{
+                    right: 8px;
+                    bottom: -8px;
+                    border-radius: 16px 16px 16px 80px;
+                 }
+                 img{
+                    border-radius: 16px 16px 16px 80px;
+                 }
+            }
+            &:after{
+                width: 100%;
+                height: 100%;
+                right: -8px;
+                bottom: -8px;
+                background: rgba($accent, 1);
+                background: linear-gradient(0deg, rgba($accent ,1) 0%, rgba($accent-dark ,1) 100%);
+                content: '';
+                position: absolute;
+                z-index: -1;
+                border-radius: 16px 16px 80px 16px;
+            }
+            img{
+                border-radius: 16px 16px 80px 16px;
+            }
+        }
+    }
+    .content-wrp{
+        padding: 16px 32px ;
+        .text-wrp{
+            .title-wrp{
+                .title{
+                    font-size: 32px;
+                }
+            }
+            .text-content{
+                .list{
+                    ul{
+                        padding-left: 0;
+                        line-height: 1.5;
+                        list-style: none;
+                        li{
+                            padding-left: 40px;
+                            background-repeat: no-repeat;
+                            background-size: 18px;
+                            background-position: 13px 10px;
+                            &.text-white{
+                                // position: relative;
+                                // &:after{
+                                //     position: absolute;
+                                //     width: 16px;
+                                //     height: 16px;
+                                //     content: '';
+                                //     border-radius: 8px;
+                                //     background-color: $primary;
+                                // }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+.to-and-from-services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba($grey-light, 0.15);
+    &.corporate-limo-contract{
+
+        .container-wrp{
+            .block-feature{
+    
+                &.block-1{
+                    // margin-top: 25px;
+                }
+                &.block-2{
+                    // margin-top: 50px;
+                    
+                }
+                &.block-3{
+                    // margin-top: 75px;
+        
+                }
+                .content-wrp{
+                    &.set-min-height{
+                        min-height: 320px;;
+                    }
+                }
+                .img-wrp{
+                    &.icon-wrp{
+                        img{
+                            width: 80px;
+                            padding: 16px;
+                        }
+                    }
+                }
+    
+                .text-content-wrp{
+                    top: 0;
+                }
+    
+            }
+        }
+    }
+    .container-wrp{
+        .block{
+            &.block-1{
+                // margin-top: 25px;
+            }
+            &.block-2{
+                // margin-top: 50px;
+                
+            }
+            &.block-3{
+                // margin-top: 75px;
+
+            }
+            &.no-img-block{
+                .content-wrp{
+                    .text-content-wrp{
+                        position: static;
+                        padding: 16px;
+                    }
+                }
+            }
+            .content-wrp{
+                padding: 8px;
+                .img-wrp{
+                    img{
+                        
+                    }
+                }
+                .text-content-wrp{
+                    position: relative;
+                    top: 1px;
+                    background-color: white;
+                    /* height: 100%; */
+                    top: -50px;
+                    margin: 16px;
+                    box-shadow: 0 0 16px 0 rgb($black, 0.25);
+                    border-radius: 16px;
+                    // height: 100%;
+                    padding: 16px;
+                    @include media-breakpoint-down(lg){
+                        padding: 8px;
+                        margin: 8px;
+
+                    }
+                }
+
+            }
+
+        }
+        .block-feature{
+
+            &.block-1{
+                // margin-top: 25px;
+            }
+            &.block-2{
+                // margin-top: 50px;
+                
+            }
+            &.block-3{
+                // margin-top: 75px;
+    
+            }
+            .content-wrp{
+                background-color: white;
+                border-radius: 16px;
+                margin-top: 50px;
+                padding: 16px;
+                &.set-min-height{
+                    min-height: 320px;;
+                }
+            }
+            .img-wrp{
+                margin-top: -50px;
+                &.icon-wrp{
+                    img{
+                        width: 100px;
+                        margin: 0 auto;
+                        display: block;
+                        padding: 10px;
+                        background-color: #fee57c;
+                        margin-bottom: 16px;
+                        border-radius: 32px;
+                        box-shadow: 0 0 16px 0 rgb($black, 0.25);
+                    }
+                }
+            }
+
+            .text-content-wrp{
+                top: 0;
+            }
+
+        }
+    }
+}
+
+.spot-limo-pricing-blocks{
+    .title-wrp{
+        .title{
+            text-align: center;
+            font-size: 32px;
+            font-family: $PlayfairFont;
+        }
+    }
+    .pricing-cards-wrp{
+        .pricing-card-wrp{
+            padding: 24px;
+            .pricing-card{
+                border: 1px solid rgba($black, 0.5);
+                box-shadow: 0 8px 8px 0 rgba($black, 0.1);
+                transition: all 0.25s ease-in-out;
+                &:hover{
+                    transition: all 0.25s ease-in-out;
+                    box-shadow: 0 8px 16px 0 rgba($black, 0.25);
+                }
+                // margin-bottom: 24px;
+                a{
+                    padding:24px 16px 24px;
+                    display: block;
+                    text-decoration: none;
+                    background-color: rgba($grey-light , 0.15);
+                    .img-wrp{
+                        margin-bottom:16px ;
+                        img{
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                    .text-wrp{
+                        text-align: center;
+                        .title{
+                            display: inline-block;
+                            color: rgba($accent ,1);
+                            padding-bottom: 8px;
+                            margin-bottom: 16px;
+                            position: relative;
+                            &:after{
+                                position: absolute;
+                                width: calc(100% + 100px);
+                                content: '';
+                                height:2px;
+                                background: rgba($accent, 1);
+                                background: linear-gradient(90deg, rgba($accent,0) 0%, rgba($accent,1) 51%, rgba($accent,0) 100%);
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        
+                        }
+                        .priceperblock{
+                            color: $black;
+                            margin-bottom: 8px;
+                            line-height: 1.1;
+                            display: none;
+                            .data{
+                                font-size: 17px;
+                                font-weight: 600;
+                            }
+                            .heading{
+                                font-weight: 500;
+                                font-size:15px;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+                .button-wrp{
+                    text-align: center;
+                    a{
+                        padding:4px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.spot-limo-pricing-accordion-wrp{
+    background-color: rgba($grey-light , 0.15);
+    .spot-limo-pricing-accordion{
+        .accordion{
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        outline: unset;
+                        box-shadow: unset;
+                        &:not(.collapsed){
+                            color: rgba($accent ,1);
+                            font-weight: 600;
+                            background-color: rgba($accent,0.25);
+                        }
+                    }
+                }
+                .accordion-collapse{
+                    .accordion-body{
+                        .list{
+                            ul{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

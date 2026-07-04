@@ -1,0 +1,48 @@
+Need description for each page of spotlimo.com 
+default description :
+"Spot Limo brings Black Sedans, Stretch limousines, Luxurious SUVs, 
+and party bus rentals for every special occasion. You can experience the 
+exquisite drive for all occasions and events at the most affordable hourly rates."
+
+
+airport-services
+amenities  
+business-trip 
+chauffeur-services
+chauffeur-services-chicago   
+chauffeur-services-corporate
+chauffeur-services-major 
+chauffeur-services-midway
+chauffeur-services-ohare
+chicago-airport  
+complete-reservations
+concerts
+confirm-reservations  
+contactus  
+conventions 
+corporate-limo-contract  
+corporate-transport  
+dupage-airport
+executive-transport  
+family-get-together  
+gary-international  
+holiday-parties  
+independence-day  
+interstate-transport
+local-attraction
+luxury-car
+meet-greet
+midway-signature  
+milwaukee-airport  
+newyear-nights 
+ohare-airport
+our-fleet
+prom-nights  
+sanctum/csrf-cookie
+sight-seeing 
+sports-event  
+tracking-services 
+vehicles  
+wedding-services  
+wedding-transport  
+white-glove

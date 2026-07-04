@@ -1,0 +1,120 @@
+.auth-wrapper{
+    margin: 50px auto;
+    &.reset-pw-wrapper{
+        padding-top: 20px ;
+        padding-bottom: 20px ;
+    }
+    &.email-enter-wrapper{
+        padding-top: 40px ;
+        padding-bottom: 40px ;
+    }
+    .row-wrapper{
+        .card{
+            padding: 40px 0;
+            .header{
+                line-height: 1;
+                i{
+                    font-size: 30px;
+                    padding: 7px 12px;
+                    position: relative;
+                    color: $accent-dark;
+                    &:before{
+                        position: relative;
+                        z-index: 1;
+                    }
+                    &:after{
+                        position: absolute;
+                        width: calc(100% - 8px);
+                        height: calc(100% - 8px);
+                        content: '';
+                        background: radial-gradient(circle, rgba(254,229,124,1) 4%, rgba(224,180,0,1) 54%);
+                        z-index: 0;
+                        left: 4px;
+                        top: 5px;
+                        transform: rotate(45deg);
+                        border-radius: 12px;
+                        opacity: 0.5;
+                    }
+                }
+                h1{
+                    margin-bottom: 0;
+                    font-size: 24px;
+                    margin-top: 8px;
+                    color: $accent;
+                }
+                h4{
+                    opacity: 0.5;
+                    color: $accent-dark;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.login-wrapper{
+        .row-wrapper{
+
+        }
+
+    }
+}
+
+.form-check {
+    @include media-breakpoint-down(sm){
+        padding-left: 0;
+    }
+    .form-check-input{
+        @include media-breakpoint-down(sm){
+            margin-left: 0;
+            margin-right: 4px;
+        }
+    }
+
+}
+
+.link-wrapper{
+    &.bottom-link{
+        margin-top: 32px;
+        .form-check{
+            p{
+                text-align: center;  
+                font-size: 15px;
+                a{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        margin: 15px 0;
+    }
+    .form-check{
+        a{
+            text-decoration: none;
+            color: $accent;
+        }
+        @include media-breakpoint-up(sm){
+            text-align: right;
+        }
+        @include media-breakpoint-down(sm){
+            padding-left: 0;
+            text-align: center;
+        }
+
+    }
+}
+.auth-btn-wrp{
+    @include media-breakpoint-up(sm){
+        margin-top: 24px;
+    }
+    button.login-btn{
+        background-color: $accent;
+        color: $white;
+        border-radius: 4px;
+        outline: 0;
+        box-shadow: unset;
+        border: 0;
+        padding-top: 10px;
+        padding-bottom: 12px;
+    }
+}

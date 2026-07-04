@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frequently Asked Questions | Spot Limo Chicago Suburbs</title>
+  <meta name="description" content="Answers to common questions about Spot Limo limo and black car service in Chicago suburbs.">
+  <link rel="icon" type="image/png" href="/build/assets/favicon-bd7c7c7a.png">
+  <link rel="stylesheet" href="/build/assets/app-47cd774a.css">
+</head>
+<body>
+<nav class="navbar main-navbar">
+  <div class="container-wrp container-lg">
+    <div class="d-flex w-100 justify-content-between align-items-center">
+      <div class="logo"><a href="/" class="d-block"><img src="/build/assets/desktop-logo-full-d2834d6d.png" alt="Spot Limo" class="img-fluid" style="max-width: 180px;"></a></div>
+      <div class="d-flex" style="gap: 16px;"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/our-blogs">Blogs</a><a class="nav-link" href="/contactus">Contact</a></div>
+    </div>
+  </div>
+</nav>

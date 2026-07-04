@@ -1,0 +1,129 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+// $font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$primary                :#FEE57C;
+$primary-dark           :#E0B400;
+$accent                 :#00707B;
+$accent-dark            :#005760;
+$light                  :#FFFFFF;
+$black                  :#001314;
+$grey-light             :#B2B2B2;
+$grey-dark             :#898787;
+
+
+// $dark                   :#1F1F1F;
+// $dark2                   :#141414;
+// $grey-light              :#8F8F8F;
+
+// Fonts
+ $latoFont :'Lato', sans-serif;
+ $PlayfairFont : 'Playfair Display', serif;
+ $bootstrapIcons : bootstrap-icons;
+
+ p a{
+    text-decoration: none;
+    &.text-light{
+        i{
+            color: $primary;
+        }
+    }
+    i{
+        color: $accent  ;
+        font-weight: 600;
+    }
+ }
+
+// Media Queries
+@mixin for-mobile-down-480 {
+    @media (max-width: 479.98px) {
+        @content;
+    }
+}
+@mixin for-mobile-down-450 {
+    @media (max-width: 449.98px) {
+        @content;
+    }
+}
+@mixin for-mobile-up-450 {
+    @media (min-width: 450px) {
+        @content;
+    }
+}
+@mixin for-mobile-down-600 {
+    @media (max-width: 601.98px) {
+        @content;
+    }
+}
+.text-justify{
+    text-align: justify;
+}
+.text-white{
+    color: $white;
+}
+p{
+    font-size: 18px;
+}
+
+.btn{
+    border-radius: 24px ;
+    padding-left: 24px;
+    padding-right: 24px;
+    &.btn-default{
+        background-color: $primary;
+        color: $black;
+        padding: 6px 24px;
+        &:hover{
+            background-color: $accent ;
+            color: $primary;
+            
+        }
+    }
+    &.rounded-sm{
+        border-radius: 4px;
+    }
+    &.icon-btn{
+        &:hover{
+            i{
+                color: $primary;
+            }
+        }
+        i{
+            margin-left: 2px;
+            color: $black;
+            
+            &.bi-arrow-right-circle-fill{
+                &::before{
+                    top: 2px;
+                }
+            }
+        }
+
+    }
+    &.btn-wide{
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+    &.btn-outlined{
+        // background-color: transparent;
+        border: 2px solid;
+        &.btn-darkbg{
+            border-color: $primary;
+            background-color: rgba($black,0.5);
+            color: $white;
+        }
+    }
+    .btn-with-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin-left: 4px;
+        }
+    }
+
+}

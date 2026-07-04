@@ -1,0 +1,463 @@
+<div class="container py-5">
+
+    {{-- Hero --}}
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <h1 class="fw-bold mb-3">Frequently Asked Questions</h1>
+            <p class="lead text-muted">Everything you need to know about Spot Limo's black car and limousine service across 20 Chicago suburbs. Can't find your answer? Call or WhatsApp us anytime at <a href="tel:+16302901761" class="text-dark fw-bold">630-290-1761</a>.</p>
+        </div>
+    </div>
+
+    {{-- Category Nav --}}
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="d-flex flex-wrap gap-2">
+                <a href="#airport" class="btn btn-outline-dark btn-sm">✈️ Airport</a>
+                <a href="#booking" class="btn btn-outline-dark btn-sm">📅 Booking</a>
+                <a href="#wedding" class="btn btn-outline-dark btn-sm">💍 Wedding</a>
+                <a href="#corporate" class="btn btn-outline-dark btn-sm">💼 Corporate</a>
+                <a href="#prom" class="btn btn-outline-dark btn-sm">🎓 Prom</a>
+                <a href="#fleet" class="btn btn-outline-dark btn-sm">🚗 Fleet</a>
+                <a href="#pricing" class="btn btn-outline-dark btn-sm">💰 Pricing</a>
+                <a href="#suburbs" class="btn btn-outline-dark btn-sm">📍 Service Area</a>
+            </div>
+        </div>
+    </div>
+
+    {{-- Airport FAQs --}}
+    <div class="row mb-5" id="airport">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">✈️ Airport Transfers</h2>
+            <div class="accordion" id="airportAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#airport1">
+                            Who offers O'Hare airport transfers from Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="airport1" class="accordion-collapse collapse show" data-bs-parent="#airportAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo LLC offers professional O'Hare airport transfer service from 20 Chicago suburbs including Naperville, Schaumburg, Oak Brook, Hinsdale, Elmhurst, Downers Grove, Wheaton, Lombard, Burr Ridge, Barrington, Aurora, and Bolingbrook. Our professional chauffeurs monitor your flight in real time, provide flat-rate pricing with no surge charges, and are available 24 hours a day, 7 days a week. <strong>Call 630-290-1761</strong> to book your O'Hare airport transfer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#airport2">
+                            Does Spot Limo offer Midway Airport transfers from Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="airport2" class="accordion-collapse collapse" data-bs-parent="#airportAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo LLC provides Midway Airport transfer service from all 20 Chicago suburbs. Our professional chauffeurs are available 24/7 including early morning and late night flights, with real-time flight tracking and guaranteed on-time pickup. <strong>Call 630-290-1761.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#airport3">
+                            What airports does Spot Limo serve?
+                        </button>
+                    </h3>
+                    <div id="airport3" class="accordion-collapse collapse" data-bs-parent="#airportAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo serves all major Chicago area airports including:
+                            <ul class="mt-2">
+                                <li>O'Hare International Airport (ORD)</li>
+                                <li>Midway International Airport (MDW)</li>
+                                <li>Milwaukee Mitchell International Airport (MKE)</li>
+                                <li>DuPage Airport (DPA)</li>
+                                <li>Chicago Executive Airport (PWK)</li>
+                                <li>Gary/Chicago International Airport (GYY)</li>
+                                <li>Midway Signature Aviation</li>
+                            </ul>
+                            <strong>Call 630-290-1761</strong> to book your airport transfer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#airport4">
+                            Does Spot Limo track flights for airport pickups?
+                        </button>
+                    </h3>
+                    <div id="airport4" class="accordion-collapse collapse" data-bs-parent="#airportAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo monitors all flights in real time for every airport pickup. If your flight is delayed or arrives early, we automatically adjust your pickup time at no extra charge. This service is included with all airport transfers.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#airport5">
+                            How much does a limo to O'Hare from Naperville cost?
+                        </button>
+                    </h3>
+                    <div id="airport5" class="accordion-collapse collapse" data-bs-parent="#airportAccordion">
+                        <div class="accordion-body text-muted">
+                            Sedan transfers from Naperville to O'Hare Airport with Spot Limo start around $75–$90 with flat-rate pricing — no surge charges, no hidden fees. SUV and stretch limo rates vary by vehicle type. For an exact quote call <strong>630-290-1761</strong> or visit <a href="{{ url('/') }}">spotlimo.com</a>.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Booking FAQs --}}
+    <div class="row mb-5" id="booking">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">📅 Booking & General</h2>
+            <div class="accordion" id="bookingAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#booking1">
+                            How do I book a limo with Spot Limo?
+                        </button>
+                    </h3>
+                    <div id="booking1" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                        <div class="accordion-body text-muted">
+                            You can book a limo with Spot Limo LLC three easy ways:
+                            <ol class="mt-2">
+                                <li><strong>Call or WhatsApp:</strong> 630-290-1761 — available 24/7</li>
+                                <li><strong>Book online:</strong> <a href="{{ url('/#bookingBlock') }}">spotlimo.com</a> through our booking form</li>
+                                <li><strong>WhatsApp:</strong> <a href="https://wa.me/16302901761">wa.me/16302901761</a> with your trip details</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#booking2">
+                            Is Spot Limo available 24/7 in Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="booking2" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo LLC is available 24 hours a day, 7 days a week, 365 days a year including all holidays across all 20 Chicago suburbs. Call or WhatsApp <strong>630-290-1761</strong> anytime to book your ride.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#booking3">
+                            Does Spot Limo charge surge pricing?
+                        </button>
+                    </h3>
+                    <div id="booking3" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                        <div class="accordion-body text-muted">
+                            No. Spot Limo LLC uses <strong>flat-rate pricing</strong> for all transfers — no surge pricing, no hidden fees, no surprise charges. Your quoted price is your final price regardless of traffic, weather, or time of day.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#booking4">
+                            Does Spot Limo offer multilingual chauffeur service?
+                        </button>
+                    </h3>
+                    <div id="booking4" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo offers multilingual chauffeur service for clients who prefer to communicate in languages other than English. Our diverse team of professional chauffeurs serves Chicago's international business community and visitors. Call <strong>630-290-1761</strong> for more information.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Wedding FAQs --}}
+    <div class="row mb-5" id="wedding">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">💍 Wedding Limo</h2>
+            <div class="accordion" id="weddingAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#wedding1">
+                            Does Spot Limo serve weddings in the Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="wedding1" class="accordion-collapse collapse" data-bs-parent="#weddingAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo provides wedding limousine service at venues across all Chicago suburbs. We serve venues including Drury Lane, Cantigny Park, Abbington Banquets, Oak Brook Hills Marriott, Stonegate Centre, Arrowhead Golf Club, and all Chicagoland wedding venues. <strong>Call 630-290-1761</strong> to book your wedding limo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#wedding2">
+                            How far in advance should I book a wedding limo?
+                        </button>
+                    </h3>
+                    <div id="wedding2" class="accordion-collapse collapse" data-bs-parent="#weddingAccordion">
+                        <div class="accordion-body text-muted">
+                            We recommend booking your wedding limo at least <strong>4–6 weeks in advance</strong> to guarantee your preferred vehicle and time slot, especially during spring and fall wedding season. Call <strong>630-290-1761</strong> or visit spotlimo.com to check availability.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#wedding3">
+                            What wedding vehicles does Spot Limo offer?
+                        </button>
+                    </h3>
+                    <div id="wedding3" class="accordion-collapse collapse" data-bs-parent="#weddingAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo's wedding fleet includes elegant stretch limousines, luxury SUVs (Lincoln Navigator, Chevrolet Suburban), stretch SUV limousines, and executive sedans. Vehicles can accommodate the bride and groom, bridal party, and family members. Call <strong>630-290-1761</strong> for availability and pricing.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Corporate FAQs --}}
+    <div class="row mb-5" id="corporate">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">💼 Corporate Travel</h2>
+            <div class="accordion" id="corporateAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#corp1">
+                            Does Spot Limo offer corporate car service in Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="corp1" class="accordion-collapse collapse" data-bs-parent="#corporateAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo provides corporate black car service throughout the Chicago suburbs including Naperville, Schaumburg, Oak Brook, Hinsdale, Downers Grove, and the I-88 tech corridor. Services include daily executive commutes, client airport pickups, corporate event transportation, and corporate accounts with monthly billing. <strong>Call 630-290-1761</strong> for corporate account rates.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#corp2">
+                            Does Spot Limo offer corporate accounts?
+                        </button>
+                    </h3>
+                    <div id="corp2" class="accordion-collapse collapse" data-bs-parent="#corporateAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo offers corporate accounts for businesses in the Chicago suburbs with benefits including monthly billing, priority booking, dedicated account management, and discounted rates for high-volume travel. Ideal for companies in Naperville, Schaumburg, Oak Brook, and the I-88 corridor. <strong>Call 630-290-1761</strong> to set up a corporate account.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Prom FAQs --}}
+    <div class="row mb-5" id="prom">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">🎓 Prom & Special Events</h2>
+            <div class="accordion" id="promAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#prom1">
+                            Does Spot Limo offer prom limo service in Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="prom1" class="accordion-collapse collapse" data-bs-parent="#promAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. Spot Limo provides prom night limo service for high schools throughout Chicago suburbs including Naperville, Schaumburg, Wheaton, Hinsdale, Elmhurst, Downers Grove, Lombard, Aurora, Barrington, and Bolingbrook. Stretch limos and luxury SUVs available. <strong>Book early — prom dates fill fast.</strong> Call 630-290-1761.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#prom2">
+                            How early should I book a prom limo?
+                        </button>
+                    </h3>
+                    <div id="prom2" class="accordion-collapse collapse" data-bs-parent="#promAccordion">
+                        <div class="accordion-body text-muted">
+                            We recommend booking your prom limo <strong>6–8 weeks in advance</strong>. Prom season in the Chicago suburbs (April–June) fills up fast. Call <strong>630-290-1761</strong> as soon as you know your prom date to guarantee your preferred vehicle.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Fleet FAQs --}}
+    <div class="row mb-5" id="fleet">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">🚗 Our Fleet</h2>
+            <div class="accordion" id="fleetAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#fleet1">
+                            What vehicles does Spot Limo have available?
+                        </button>
+                    </h3>
+                    <div id="fleet1" class="accordion-collapse collapse" data-bs-parent="#fleetAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo's luxury fleet includes:
+                            <ul class="mt-2">
+                                <li>Black executive sedans (1–3 passengers)</li>
+                                <li>Luxury SUVs — Chevrolet Suburban, Lincoln Navigator (1–6 passengers)</li>
+                                <li>Stretch limousines (6–10 passengers)</li>
+                                <li>Stretch SUV limousines (10–14 passengers)</li>
+                                <li>Executive vans (up to 14 passengers)</li>
+                            </ul>
+                            All vehicles are professionally maintained, fully insured, and equipped for a comfortable, stylish ride. <strong>Call 630-290-1761</strong> to choose your vehicle.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#fleet2">
+                            Are Spot Limo chauffeurs licensed and background checked?
+                        </button>
+                    </h3>
+                    <div id="fleet2" class="accordion-collapse collapse" data-bs-parent="#fleetAccordion">
+                        <div class="accordion-body text-muted">
+                            Yes. All Spot Limo chauffeurs are professionally licensed, background-checked, and trained to provide a safe, comfortable, and professional experience. Your safety is our top priority on every trip across all 20 Chicago suburbs.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Pricing FAQs --}}
+    <div class="row mb-5" id="pricing">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">💰 Pricing</h2>
+            <div class="accordion" id="pricingAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#price1">
+                            Does Spot Limo charge surge pricing?
+                        </button>
+                    </h3>
+                    <div id="price1" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+                        <div class="accordion-body text-muted">
+                            No. Spot Limo LLC uses <strong>flat-rate pricing</strong> for all transfers — no surge pricing, no hidden fees, no surprise charges. Your quoted price is your final price regardless of traffic, weather, or time of day. This applies to all airport transfers, corporate trips, weddings, and all other services.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#price2">
+                            What payment methods does Spot Limo accept?
+                        </button>
+                    </h3>
+                    <div id="price2" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo accepts all major credit cards, debit cards, and NFC mobile payments. Corporate accounts can be set up for monthly invoicing. <strong>Call 630-290-1761</strong> for more details on payment options.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- Service Area FAQs --}}
+    <div class="row mb-5" id="suburbs">
+        <div class="col-12">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">📍 Service Area</h2>
+            <div class="accordion" id="suburbsAccordion">
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#suburb1">
+                            What suburbs does Spot Limo serve?
+                        </button>
+                    </h3>
+                    <div id="suburb1" class="accordion-collapse collapse" data-bs-parent="#suburbsAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo LLC serves 20+ Chicago suburbs including:
+                            <div class="row mt-2">
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li><a href="{{ route('naperville') }}">Naperville, IL</a></li>
+                                        <li><a href="{{ route('schaumburg') }}">Schaumburg, IL</a></li>
+                                        <li><a href="{{ route('oak-brook') }}">Oak Brook, IL</a></li>
+                                        <li><a href="{{ route('hinsdale') }}">Hinsdale, IL</a></li>
+                                        <li><a href="{{ route('elmhurst') }}">Elmhurst, IL</a></li>
+                                        <li><a href="{{ route('downers-grove') }}">Downers Grove, IL</a></li>
+                                        <li><a href="{{ route('wheaton') }}">Wheaton, IL</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li><a href="{{ route('lombard') }}">Lombard, IL</a></li>
+                                        <li><a href="{{ route('burr-ridge') }}">Burr Ridge, IL</a></li>
+                                        <li><a href="{{ route('barrington') }}">Barrington, IL</a></li>
+                                        <li><a href="{{ route('bolingbrook') }}">Bolingbrook, IL</a></li>
+                                        <li><a href="{{ route('aurora') }}">Aurora, IL</a></li>
+                                        <li><a href="{{ route('itasca') }}">Itasca, IL</a></li>
+                                        <li><a href="{{ route('lisle') }}">Lisle, IL</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li><a href="{{ route('roselle') }}">Roselle, IL</a></li>
+                                        <li><a href="{{ route('glen-ellyn') }}">Glen Ellyn, IL</a></li>
+                                        <li><a href="{{ route('westmont') }}">Westmont, IL</a></li>
+                                        <li><a href="{{ route('clarendon-hills') }}">Clarendon Hills, IL</a></li>
+                                        <li><a href="{{ route('carol-stream') }}">Carol Stream, IL</a></li>
+                                        <li><a href="{{ route('villa-park') }}">Villa Park, IL</a></li>
+                                        <li><a href="{{ route('addison') }}">Addison, IL</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <strong>Call 630-290-1761</strong> for service in your area.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border mb-2">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#suburb2">
+                            What is the best limo service in the Chicago suburbs?
+                        </button>
+                    </h3>
+                    <div id="suburb2" class="accordion-collapse collapse" data-bs-parent="#suburbsAccordion">
+                        <div class="accordion-body text-muted">
+                            Spot Limo LLC is a premier black car and limousine service based in Oakbrook Terrace, IL, serving 20 Chicago suburbs. With professional licensed chauffeurs available 24/7, flat-rate pricing, real-time flight tracking, and a luxury fleet of sedans, SUVs, and stretch limousines, Spot Limo is the trusted choice for airport transfers, weddings, corporate travel, and special events across DuPage County and the greater Chicago metro area. <strong>Call 630-290-1761</strong> to book.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{-- CTA --}}
+    <div class="row bg-dark text-white p-5 rounded text-center">
+        <div class="col-12">
+            <h2 class="fw-bold mb-3">Still Have Questions?</h2>
+            <p class="lead mb-4">Call or WhatsApp us anytime — 24/7 across all Chicago suburbs.</p>
+            <a href="tel:+16302901761" class="btn btn-light btn-lg me-3">📞 Call 630-290-1761</a>
+            <a href="https://wa.me/16302901761?text=Hi%20Spot%20Limo!%20I%20have%20a%20question." class="btn btn-outline-light btn-lg" target="_blank">💬 WhatsApp Us</a>
+        </div>
+    </div>
+
+</div>
+@endsection
