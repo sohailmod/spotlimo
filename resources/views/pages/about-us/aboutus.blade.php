@@ -1,5 +1,33 @@
 @extends('layouts.app')
 
+@section('customStyles')
+<style>
+    .spot-limo-intro-block,
+    .personalised-limo-block,
+    .ideal-travel-partner-block,
+    .about-us-content-block,
+    .about-us-content-block .text-wrp,
+    .about-us-content-block .text-content,
+    .about-us-content-block .text-content p,
+    .about-us-content-block .text-content li {
+        color: #f8f4e8 !important;
+    }
+
+    .about-us-content-block .title-wrp .title,
+    .about-us-content-block h1,
+    .about-us-content-block h2,
+    .about-us-content-block h3,
+    .about-us-content-block h4 {
+        color: #ffffff !important;
+    }
+
+    .about-us-content-block a,
+    .about-us-content-block a i {
+        color: #f0d28a !important;
+    }
+</style>
+@endsection
+
 @section('content')
 
     <div class="w-100 hero-section-wrp">
