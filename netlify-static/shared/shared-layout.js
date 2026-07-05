@@ -461,6 +461,30 @@
     });
   }
 
+  function normalizeHeaderCallButton() {
+    const header = document.querySelector('nav.main-navbar.site-header');
+    if (!header) return;
+
+    const navItems = header.querySelector('.navigation .nav-items');
+    if (!navItems) return;
+
+    const existingCallItem = header.querySelector('.call-us-item');
+    const legacyCallLink = header.querySelector('.login-register .wrapper');
+
+    // If old cached markup exists, move its call link into nav items and remove legacy block.
+    if (!existingCallItem && legacyCallLink) {
+      const callItem = document.createElement('div');
+      callItem.className = 'nav-item call-us-item d-none d-md-block';
+      callItem.appendChild(legacyCallLink.cloneNode(true));
+      navItems.appendChild(callItem);
+    }
+
+    const legacyBlock = header.querySelector('.login-register');
+    if (legacyBlock) {
+      legacyBlock.remove();
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', async () => {
     ensureStylesheet();
     if (isSubpage) {
@@ -484,6 +508,7 @@
       replaceWithHTML(currentHeader, headerHTML, { fallback: 'prepend' });
       replaceWithHTML(currentFooter, footerHTML, { fallback: 'append' });
 
+      normalizeHeaderCallButton();
       wireDropdowns();
       renderLegacyStubPage();
     } catch (error) {

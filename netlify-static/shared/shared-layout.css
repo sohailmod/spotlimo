@@ -90,7 +90,9 @@
 
 @media (min-width: 768px) {
   .main-navbar.site-header .navigation-wrapper {
-    flex: 1;
+    flex: 1 1 auto;
+    max-width: none;
+    width: auto;
     gap: 18px;
     justify-content: space-between;
   }
@@ -114,9 +116,14 @@
 
   .main-navbar.site-header .navigation .nav-items {
     gap: 14px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
+  }
+
+  /* Defensive: if older header markup is served from cache, never let it float over hero */
+  .main-navbar.site-header .login-register {
+    display: none !important;
   }
 
   .main-navbar.site-header .nav-item {
@@ -225,6 +232,25 @@ body.site-subpage .spot-limo-pricing-blocks {
 
 body.site-subpage {
   background: linear-gradient(180deg, #07101d 0%, #10293a 100%);
+}
+
+/* Ensure readable text contrast on static subpages like About */
+body.site-subpage .static-wrap,
+body.site-subpage .static-wrap h1,
+body.site-subpage .static-wrap h2,
+body.site-subpage .static-wrap h3,
+body.site-subpage .static-wrap p,
+body.site-subpage .static-wrap li,
+body.site-subpage .container.py-5,
+body.site-subpage .container.py-5 h1,
+body.site-subpage .container.py-5 h2,
+body.site-subpage .container.py-5 p {
+  color: #f8f4e8 !important;
+}
+
+body.site-subpage .static-wrap a,
+body.site-subpage .container.py-5 a {
+  color: #f0d28a !important;
 }
 
 .legacy-page {
