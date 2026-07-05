@@ -1,4 +1,49 @@
 <nav class="navbar main-navbar">
+    <style>
+        nav.main-navbar {
+            height: 72px;
+        }
+        nav.main-navbar .container-wrp .navigation-wrapper {
+            height: 72px;
+        }
+        nav.main-navbar .container-wrp .logo-wrapper {
+            max-width: 176px;
+        }
+        nav.main-navbar .container-wrp .navigation-wrapper .navigation .links .nav-items {
+            align-items: center;
+        }
+        nav.main-navbar .container-wrp .navigation-wrapper .navigation .links .nav-items .call-us-item .wrapper {
+            padding: 9px 18px 8px;
+            border-radius: 24px;
+            background-color: rgba(3, 128, 136, 1);
+            text-decoration: none;
+            margin-left: 8px;
+        }
+        nav.main-navbar .container-wrp .navigation-wrapper .navigation .links .nav-items .call-us-item .wrapper span,
+        nav.main-navbar .container-wrp .navigation-wrapper .navigation .links .nav-items .call-us-item .wrapper i {
+            color: #f8f4e8;
+        }
+        nav.main-navbar .container-wrp .navigation-wrapper .navigation .links .nav-items .call-us-item .wrapper .phone-number {
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        @media (max-width: 991.98px) {
+            nav.main-navbar .container-wrp .logo-wrapper {
+                max-width: 144px;
+            }
+        }
+        @media (max-width: 767.98px) {
+            nav.main-navbar {
+                height: 56px;
+            }
+            nav.main-navbar .container-wrp .navigation-wrapper {
+                height: 56px;
+            }
+            nav.main-navbar .container-wrp .logo-wrapper {
+                max-width: 124px;
+            }
+        }
+    </style>
     <div class="container-wrp container-lg">
 
         <div class="d-flex w-100 justify-content-between">
@@ -124,23 +169,22 @@
                                 <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                             </div>
 
+                            {{-- Call Button --}}
+                            <div class="nav-item call-us-item d-none d-md-block">
+                                <a href="tel:+1{{ str_replace('-', '', theme_options()->where('key', 'hotline')->first()->value) }}"
+                                    class="wrapper d-flex align-items-center">
+                                    <span class="d-sm-block d-none me-2">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </span>
+                                    <span class="d-flex flex-column mb-1">
+                                        <span>Call Us</span>
+                                        <span class="phone-number">{{ theme_options()->where('key', 'hotline')->first()->value }}</span>
+                                    </span>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </div>
-
-            {{-- Call Button --}}
-            <div class="col-lg-auto col-md-2 login-register">
-                <div>
-                    <a href="tel:+1{{ str_replace('-', '', theme_options()->where('key', 'hotline')->first()->value) }}"
-                        class="wrapper d-flex align-items-center">
-                        <span class="d-sm-block d-none">
-                            <i class="bi bi-telephone-fill"></i>
-                        </span>
-                        <span class="d-flex flex-column mb-1">
-                            <span>Call Us</span>
-                        </span>
-                    </a>
                 </div>
             </div>
 

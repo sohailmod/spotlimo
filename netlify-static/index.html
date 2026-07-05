@@ -18,6 +18,14 @@
       z-index: 300;
       border-bottom: 1px solid #e5e7eb;
     }
+    .main-navbar .container-wrp {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+    .main-navbar .desktop-logo img {
+      width: auto;
+      max-height: 70px;
+    }
     .main-navbar .nav-link { color: #1a1a1a !important; }
     .main-navbar .nav-link:hover { color: #000 !important; }
     .main-navbar .dropdown-wrp > .nav-link,
@@ -76,12 +84,24 @@
       .main-navbar .sub-dropdown-wrp:hover > .sub-dropdown-menu {
         display: block;
       }
-      .main-navbar .login-register .wrapper { color: #1a1a1a !important; }
-      .main-navbar .login-register .wrapper span:last-child {
+      .main-navbar .call-us-item .wrapper { color: #1a1a1a !important; }
+      .main-navbar .call-us-item .wrapper span:last-child {
         line-height: 1.15;
       }
-      .main-navbar .login-register .wrapper .phone-number {
+      .main-navbar .call-us-item .wrapper .phone-number {
         font-weight: 700;
+      }
+      .main-navbar .call-us-item .wrapper {
+        margin-left: 8px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .main-navbar .container-wrp {
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      .main-navbar .desktop-logo img {
+        max-height: 60px;
       }
     }
     .booking-block-mainwrp {
@@ -238,17 +258,14 @@
                 <div class="nav-item"><a class="nav-link" href="/our-blogs">Blogs</a></div>
                 <div class="nav-item"><a class="nav-link" href="/faq">FAQ</a></div>
                 <div class="nav-item"><a class="nav-link" href="/contactus">Contact Us</a></div>
+                <div class="nav-item call-us-item d-none d-md-block">
+                  <a href="tel:+16302901761" class="wrapper d-flex align-items-center">
+                    <span class="d-sm-block d-none"><i class="bi bi-telephone-fill"></i></span>
+                    <span class="d-flex flex-column mb-1"><span>Call Us</span><span class="phone-number">630-290-1761</span></span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-auto col-md-2 login-register">
-          <div>
-            <a href="tel:+16302901761" class="wrapper d-flex align-items-center">
-              <span class="d-sm-block d-none"><i class="bi bi-telephone-fill"></i></span>
-              <span class="d-flex flex-column mb-1"><span>Call Us</span><span class="phone-number">630-290-1761</span></span>
-            </a>
           </div>
         </div>
 
@@ -293,7 +310,7 @@
   </div>
 
   <div class="container-md booking-block-mainwrp" id="bookingBlock">
-    <form class="row booking-form-mock" method="POST" action="https://formspree.io/f/your-form-id">
+    <form class="row booking-form-mock" method="POST" action="https://formspree.io/f/xlgyzjnp">
       <input type="hidden" name="_subject" value="New Spot Limo booking enquiry">
       <div class="col-12">
         <div class="booking-grid">
@@ -397,18 +414,19 @@
         <div class="form-wrp">
           <div class="title-wrp"><h1 class="title">Contact Us</h1></div>
           <div class="intro pt-3"><p class="mb-0 pb-3" style="border-bottom:1px solid black; font-size:16px; font-style:italic;">Our professional drivers and chauffeurs offer prompt pick-and-drop services. Besides, our response time and impressive reputation make us the best and most reliable limo rental and car service provider in Illinois.<br><b>So, contact us now if you want to spend less and hire the best.</b></p></div>
-          <form>
+          <form method="POST" action="https://formspree.io/f/xlgyzjnp">
+            <input type="hidden" name="_subject" value="New Spot Limo contact request">
             <div class="row mx-0 mt-4">
               <div class="px-0 col-lg-6">
-                <div class="mb-3"><input type="text" class="form-control" placeholder="Enter Your Name"></div>
-                <div class="mb-3"><input type="email" class="form-control" placeholder="Enter Your Email Address"></div>
-                <div class="mb-0"><input type="text" class="form-control" placeholder="Enter Your Contact Number"></div>
+                <div class="mb-3"><input type="text" class="form-control" name="name" placeholder="Enter Your Name" required></div>
+                <div class="mb-3"><input type="email" class="form-control" name="email" placeholder="Enter Your Email Address" required></div>
+                <div class="mb-0"><input type="text" class="form-control" name="phone" placeholder="Enter Your Contact Number" required></div>
                 <span><i> contact should not be less than 10 digits i.e. <strong>2241111111</strong></i></span>
               </div>
               <div class="pe-lg-0 ps-lg-3 px-0 col-lg-6 mt-lg-0 mt-3">
-                <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Write here..."></textarea></div>
+                <div class="mb-3"><textarea class="form-control" name="message" rows="5" placeholder="Write here..." required></textarea></div>
               </div>
-              <div class="px-0 col-lg-12 mt-3"><button type="button" class="btn btn-default rounded-sm btn-send-message">Submit Your Request</button></div>
+              <div class="px-0 col-lg-12 mt-3"><button type="submit" class="btn btn-default rounded-sm btn-send-message">Submit Your Request</button></div>
             </div>
           </form>
         </div>

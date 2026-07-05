@@ -415,6 +415,9 @@
     }
   }
 
+  // Start fetching shared CSS immediately to reduce first-paint shifts.
+  ensureStylesheet();
+
   async function loadFragment(url) {
     const response = await fetch(url, { cache: 'no-cache' });
     return response.text();
@@ -462,6 +465,11 @@
     ensureStylesheet();
     if (isSubpage) {
       document.body.classList.add('site-subpage');
+    }
+
+    // Keep homepage header/footer static to avoid post-load replacement jumps.
+    if (!isSubpage) {
+      return;
     }
 
     try {
