@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found | Spot Limo</title>
+  <meta name="description" content="The page you requested could not be found on Spot Limo.">
+  <link rel="icon" type="image/png" href="/build/assets/favicon-bd7c7c7a.png">
+  <link rel="stylesheet" href="/build/assets/app-47cd774a.css">
+  <style>
+    :root {
+      --ink: #101828;
+      --muted: #667085;
+      --panel: rgba(255, 255, 255, 0.88);
+      --line: rgba(16, 24, 40, 0.12);
+      --accent: #0a1228;
+      --accent-soft: #e9edf7;
+      --bg1: #f5f7fb;
+      --bg2: #eef3fb;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(10, 18, 40, 0.08), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(10, 18, 40, 0.06), transparent 28%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      font-family: inherit;
+    }
+
+    .page-shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .topbar {
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand img {
+      display: block;
+      max-width: 180px;
+      height: auto;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: flex-end;
+    }
+
+    .quick-links a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: grid;
+      place-items: center;
+      padding: 48px 20px 56px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(10, 18, 40, 0.10);
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    .message {
+      max-width: 560px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 160px;
+      padding: 13px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(10, 18, 40, 0.20);
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--accent);
+      border: 1px solid var(--line);
+    }
+
+    .support {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .support a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .card {
+        padding: 32px 22px;
+        border-radius: 22px;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="/" aria-label="Spot Limo home">
+          <img src="/build/assets/desktop-logo-full-d2834d6d.png" alt="Spot Limo">
+        </a>
+        <nav class="quick-links" aria-label="Quick links">
+          <a href="/about-us">About</a>
+          <a href="/airport-services">Airport Services</a>
+          <a href="/contactus">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="card" aria-labelledby="page-not-found-title">
+        <div class="eyebrow">404 Page Not Found</div>
+        <h1 id="page-not-found-title">This page does not exist.</h1>
+        <p class="message">
+          The link may be outdated or the address may have been typed incorrectly.
+          Use the links below to return to the main site or get in touch if you need help finding a page.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="/">Go to Home</a>
+          <a class="button secondary" href="/our-fleet">View Fleet</a>
+        </div>
+        <p class="support">
+          Need assistance? Call <a href="tel:+16302901761">+1 630-290-1761</a> or email <a href="mailto:info@spotlimo.com">info@spotlimo.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>Spotlimo.com All Rights Reserved.</span>
+        <span><a href="/contactus">Contact us</a> for booking help.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
